@@ -1,0 +1,63 @@
+/*トップにあるボタン */
+
+.pus {
+  list-style: none;
+  /*周囲の線の起点とするためrelativeを指定*/
+  position: relative;
+  display: flex;
+  top: -160px;
+  left: 900px;
+  margin: 10px 0 0 10px;
+  /*円の形状*/
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  text-align: center;
+  background: #333;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  /*中央にテキストを配置*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*内側の線*/
+.pus:after {
+  list-style: none;
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*線の形状*/
+  width: 85%;
+  height: 85%;
+  border: 2px solid #333;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  /*アニメーションの指定*/
+  transition: 0.3s ease;
+}
+
+/*hoverをしたら枠線が小さくなる*/
+.pus:hover:after {
+  transform: translate(-50%, -50%) scale(1);
+  border-color: #fff;
+  list-style: none;
+}
+
+.nail {
+  width: 32%; /* 幅指定 */
+  display: flex; /* インラインブロック要素にする */
+  vertical-align: top; /* 要素を上揃えにする */
+
+  margin-bottom: 10px; /* 要素同士の隙間調整 */
+  padding: 10px; /* 余白指定 */
+  box-sizing: border-box; /* 崩れ防止 */
+  list-style: none;
+  margin-top: -10px;
+}

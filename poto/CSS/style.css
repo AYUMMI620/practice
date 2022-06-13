@@ -1,0 +1,54 @@
+body {
+  background-position: center; /*中央に配置 */
+  background-repeat: no-repeat; /*繰り返し表示しない */
+  background-attachment: fixed; /* 画像の高さより大きい時、動かないように固定*/
+  background-size: cover; /*背景画像を調整*/
+}
+
+h1 {
+  padding: 300px 0;
+  color: #ffffe0;
+}
+nav {
+  text-align: center; /*文字を真ん中に*/
+}
+nav ul li {
+  display: inline-block; /*横並び*/
+  width: 18%;
+  min-width: 90px;
+}
+nav ul li a {
+  text-decoration: none; /*文字の下に線をつけない*/
+  color: #b0e0e6; /*文字*/
+  font-weight: bolder;
+}
+nav ul li a:after {
+  color: #f33135;
+}
+nav ul li a:hover {
+  color: #e7da66; /*矢印を持ってきたら色が変わる*/
+}
+
+.area {
+  text-align: center; /*文字を真ん中に*/
+}
+.area ul li {
+  display: inline-block; /*横並び*/
+  width: 18%;
+  min-width: 90px;
+}
+.area ul li a {
+  color: #b0e0e6; /*文字*/
+  font-weight: bolder;
+}
+.area ul li a:after {
+  color: #f33135;
+}
+area ul li a:hover {
+  color: #e7da66; /*矢印を持ってきたら色が変わる*/
+}
+
+.goods {
+  text-align: center;
+  display: inline-block;
+}

@@ -1,0 +1,21 @@
+/*ニュース1行の周りの余白*/
+.new a {
+  list-style: none;
+  display: inline-block;
+  background-color: rgb(240, 234, 234, 0.8);
+  padding: 10px 10px;
+  text-align: center;
+  position: relative;
+  left: 280px;
+}
+
+/*日付*/
+.new span {
+  list-style: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-right: 20px;
+  color: #777;
+  padding: 0px 0px 10px;
+  text-align: center;
+}
